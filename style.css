@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Reset style */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General style */
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+/* Logo style */
+.logo{
+    color: #e3872d;
+    font-weight:500;
+}
+
+/* Whole section */
+.whole{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px;
+    color: #fff;
+   /* overflow: hidden;*/
+}
+
+/* Position of img to be visible on all screens */
+.img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   overflow: hidden;
+}
+
+/* Content visibility */
+
+.content{
+    z-index: 2;
+}
+
+.img-container img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Adding overlay for img */
+
+.img-container:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.content p{
+    font-size: 18px;
+}
+
+.content .small i{
+     color: #e3872d;
+}
+
+.form{
+    margin-top: 15px;
+    
+}
+
+.form input{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255,255,255,0.85);
+    font-size: 14px;
+}
+
+::placeholder{
+    color: #e3872d;
+}
+
+.btn{
+    display: inline-block;
+    border: 1px solid #e3872d;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 30px 0;
+    
+}
+
+.btn:hover{
+    color: #e3872d;
+    background-color: rgba(1,1,1,0.1);
+
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.social-icons a{
+    color: #fff;
+    font-size: 22px;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+
+.social-icons a:hover{
+    color: #e3872d;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+}
